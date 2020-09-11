@@ -43,10 +43,10 @@ class ImageController extends Controller
 
             return redirect('/output');
         } else {
-            // return redirect()
-                // ->back();
-                // ->withInput();
-                // ->withErrors();
+            return redirect()
+                ->back();
+                ->withInput();
+                ->withErrors();
         }
     }
 
