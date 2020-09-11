@@ -20,7 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'App\Http\Controllers\HomeController@index');
+// Route::get('/', 'App\Http\Controllers\HomeController@index');
+// Route::get('/', ['user'=>'HomeController@index', 'as'=>'home']);
+Route::get('/', 'HomeController@index')->name('home');
 Route::resource('home', 'HomeController');
 
 //下記を追記
